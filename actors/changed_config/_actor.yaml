@@ -1,0 +1,15 @@
+---
+tags:
+  - preupgradeassistant
+inputs:
+  - name: rpm_va
+    type: RPMVAPackages
+outputs:
+  - name: changed_config
+    type: ChangedConfig
+description: |
+  An actor to list all changed config files
+executor:
+  type: default
+  executable: /bin/bash
+  script-file: changed_config.sh

@@ -1,0 +1,12 @@
+---
+tags:
+  - preupgradeassistant
+outputs:
+  - name: getent_passwd
+    type: GetentPasswd
+description: |
+  An actor to list all users
+executor:
+  type: default
+  executable: /bin/bash
+  script-file: getent_passwd.sh

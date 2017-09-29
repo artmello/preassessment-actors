@@ -1,0 +1,15 @@
+---
+tags:
+  - preupgradeassistant
+inputs:
+  - name: local_file_systems
+    type: LocalFileSystems
+outputs:
+  - name: all_executables
+    type: AllExecutables
+description: |
+  An actor to list all executables
+executor:
+  type: default
+  executable: /bin/bash
+  script-file: all_executables.sh

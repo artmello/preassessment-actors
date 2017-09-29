@@ -1,0 +1,12 @@
+---
+tags:
+  - preupgradeassistant
+outputs:
+  - name: getent_group
+    type: GetentGroup
+description: |
+  An actor to list all groups
+executor:
+  type: default
+  executable: /bin/bash
+  script-file: getent_group.sh

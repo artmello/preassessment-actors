@@ -1,0 +1,12 @@
+---
+tags:
+  - preupgradeassistant
+outputs:
+  - name: rpm_qa
+    type: RPMQAPackages
+description: |
+  An actor to list all installed packages
+executor:
+  type: default
+  executable: /bin/bash
+  script-file: rpm_qa.sh

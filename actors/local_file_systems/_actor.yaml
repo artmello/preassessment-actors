@@ -1,0 +1,12 @@
+---
+tags:
+  - preupgradeassistant
+outputs:
+  - name: local_file_systems
+    type: LocalFileSystems
+description: |
+  An actor to list all local file systems
+executor:
+  type: default
+  executable: /bin/bash
+  script-file: local_file_systems.sh
