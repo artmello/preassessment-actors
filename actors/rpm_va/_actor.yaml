@@ -3,10 +3,10 @@ tags:
   - preupgradeassistant
 outputs:
   - name: rpm_va
-    type: RPMVAPackages
+    type:
+      name: RPMVAPackages
 description: |
   An actor to list all changed files
-executor:
-  type: default
+execute:
   executable: /bin/bash
   script-file: rpm_va.sh

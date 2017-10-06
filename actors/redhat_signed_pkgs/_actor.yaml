@@ -3,13 +3,14 @@ tags:
   - preupgradeassistant
 inputs:
   - name: rpm_qa
-    type: RPMQAPackages
+    type:
+      name: RPMQAPackages
 outputs:
   - name: redhat_signed_pkgs
-    type: RedHatSignedPackages
+    type:
+      name: RedHatSignedPackages
 description: |
   An actor to list all Red Hat signed pkgs
-executor:
-  type: default
+execute:
   executable: /bin/bash
   script-file: redhat_signed_pkgs.sh

@@ -3,10 +3,10 @@ tags:
   - preupgradeassistant
 outputs:
   - name: chkconfig_list
-    type: ChkconfigList
+    type:
+      name: ChkconfigList
 description: |
   An actor to list services statuses
-executor:
-  type: default
+execute:
   executable: /bin/bash
   script-file: chkconfig_list.sh

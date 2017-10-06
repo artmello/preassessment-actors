@@ -1,4 +1,5 @@
 import jsl
+from snactor.registry.schemas import registered_schema
 
 
 class RedHatSignedPackage(jsl.Document):
@@ -7,5 +8,6 @@ class RedHatSignedPackage(jsl.Document):
     signature = jsl.StringField()
 
 
+@registered_schema('1.0')
 class RedHatSignedPackages(jsl.Document):
     entries = jsl.ArrayField(jsl.DocumentField(RedHatSignedPackage()))

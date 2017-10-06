@@ -3,10 +3,10 @@ tags:
   - preupgradeassistant
 outputs:
   - name: rpm_qal
-    type: RPMQALFiles
+    type:
+      name: RPMQALFiles
 description: |
   An actor to list all installed files
-executor:
-  type: default
+execute:
   executable: /bin/bash
   script-file: rpm_qal.sh

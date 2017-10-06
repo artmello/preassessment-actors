@@ -3,13 +3,14 @@ tags:
   - preupgradeassistant
 inputs:
   - name: local_file_systems
-    type: LocalFileSystems
+    type:
+      name: LocalFileSystems
 outputs:
   - name: all_executables
-    type: AllExecutables
+    type:
+      name: AllExecutables
 description: |
   An actor to list all executables
-executor:
-  type: default
+execute:
   executable: /bin/bash
   script-file: all_executables.sh

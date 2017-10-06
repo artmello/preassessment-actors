@@ -3,13 +3,14 @@ tags:
   - preupgradeassistant
 inputs:
   - name: local_file_systems
-    type: LocalFileSystems
+    type:
+      name: LocalFileSystems
 outputs:
   - name: all_files
-    type: AllFiles
+    type:
+      name: AllFiles
 description: |
   An actor to list all files
-executor:
-  type: default
+execute:
   executable: /bin/bash
   script-file: all_files.sh
