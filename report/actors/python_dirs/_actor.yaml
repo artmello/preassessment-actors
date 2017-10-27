@@ -1,0 +1,10 @@
+---
+outputs:
+- name: python_dirs
+  type:
+    name: StringList
+description: |
+  List all Python directories present
+execute:
+  executable: /usr/bin/python
+  script-file: python_dirs.py

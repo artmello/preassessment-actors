@@ -1,0 +1,14 @@
+---
+inputs:
+- name: python_dirs
+  type:
+    name: StringList
+outputs:
+- name: python_pkgs
+  type:
+    name: DirPkgList
+description: |
+  Map each Python directory to a package
+execute:
+  executable: /usr/bin/python
+  script-file: python_pkgs.py

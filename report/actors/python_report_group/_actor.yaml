@@ -1,0 +1,10 @@
+outputs:
+- name: python_report
+  type:
+    name: ReportList
+description: |
+  Generate a preupgrade report based on existing Python modules not owned by an RPM pkg
+group:
+- python_dirs
+- python_pkgs
+- python_report

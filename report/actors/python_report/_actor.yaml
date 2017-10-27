@@ -1,0 +1,14 @@
+---
+inputs:
+- name: python_pkgs
+  type:
+    name: DirPkgList
+outputs:
+- name: python_report
+  type:
+    name: ReportList
+description: |
+  Parse directory <-> package map and build a report
+execute:
+  executable: /usr/bin/python
+  script-file: python_report.py
